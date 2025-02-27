@@ -5,8 +5,8 @@ import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.example.COURIER.*;
-import org.example.COURIER.Courier;
+import org.example.courier.*;
+import org.example.courier.Courier;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,8 +35,9 @@ public class TestLogin {
     @Description("Можно войти с существующими данными")
     public void courierCanSuccessfullyLogin() {
         ValidatableResponse responseLoginCourier = courierClient.login(courierCreds);
-        courierAssertions.succesfullyLoggedIn(responseLoginCourier);
         idCourier = responseLoginCourier.extract().path("id");
+        courierAssertions.succesfullyLoggedIn(responseLoginCourier);
+
     }
     @Test
     @DisplayName("Логин курьера без заполнения логина")

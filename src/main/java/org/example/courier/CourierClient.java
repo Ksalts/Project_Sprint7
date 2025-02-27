@@ -1,4 +1,4 @@
-package org.example.COURIER;
+package org.example.courier;
 
 import io.qameta.allure.Step;
 import io.restassured.http.ContentType;

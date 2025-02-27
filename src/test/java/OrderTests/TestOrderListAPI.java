@@ -2,7 +2,7 @@ package OrderTests;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
-import org.example.ORDER.OrderFlow;
+import org.example.order.OrderFlow;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsNull.notNullValue;

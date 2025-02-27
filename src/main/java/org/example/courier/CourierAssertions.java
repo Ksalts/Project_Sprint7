@@ -1,4 +1,4 @@
-package org.example.COURIER;
+package org.example.courier;
 import io.restassured.response.ValidatableResponse;
 
 import static org.hamcrest.CoreMatchers.is;
